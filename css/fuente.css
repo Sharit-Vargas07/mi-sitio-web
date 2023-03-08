@@ -1,0 +1,6 @@
+h2 {
+    font-size: 50px; /*Tamaño en la imagen*/
+    font-weight: 900; /*Grosor en la letra*/
+    font-style: italic; /*estilos de letra*/
+    font-family: 'Lobster'; font-family: 'Pacifico', cursive;
+}

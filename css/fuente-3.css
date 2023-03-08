@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    border: 0;
+}
+.main-box{
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(rgb(0, 0, 27),rgb(0,12,123)  );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font-disney{
+    font-family:'Waltograph'; 
+    text-align: center;
+    color: white;
+    font-size: 10em;
+}
+/* Disney-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Waltograph';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/waltograph42.otf'); 
+    src: url('../fonts/waltographUI.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         /*url('../fonts/cinzel-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+}
