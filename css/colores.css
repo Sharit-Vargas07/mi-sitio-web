@@ -1,55 +1,46 @@
-.box-1{
-    background-color: aquamarine;
+.box-colors{
+    display: flex;
+    flex-direction: row;
+}
+.box-style{
+    display: flex;
     width: 300px;
     height: 300px;
-    display: inline-block;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: white;
+    font-size: 1.6em;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-1{
+    background-color: aquamarine;
 }
 .box-2{
     background-color: blue;
-    width: 300px;
-    height: 300px; 
-    display: inline-block
 }
 .box-3{
     background-color:lightgreen;
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 .box-4{
     background-color:rgb(255, 0, 204);
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 .box-5{
     background-color:rgb(102, 255, 0);
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 .box-6{
     background-color:rgb(153, 51, 255 );
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 .box-7{
     background-color:#1ABC9C;
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 .box-8{
     background-color:#66CCFF;
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 .box-9{
     background-color:#BDBDBD ;
-    width: 300px;
-    height: 300px;
-    display: inline-block
 }
 
