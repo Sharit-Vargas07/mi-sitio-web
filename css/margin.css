@@ -1,0 +1,36 @@
+.h1{
+    text-align: center;
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+}
+.box-style{
+    width: 300px;
+    height: 320px;
+    margin: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: justify;
+    font-size: 1.3em;
+    letter-spacing: 0;
+    word-spacing: 0;
+    line-height: 1.4em;
+ 
+}
+/*Border solid*/
+.box-1{
+    border: 2px solid rgb(64,64,64,.9);  
+}
+/*Border dashed */
+.box-2{
+   border: 2px dashed rgb(6, 6, 116)
+}
+/*Border dotted*/
+.box-3{
+   border: 2px dotted rgb(138, 6, 162);
+}
+/*Border double*/
+.box-4{
+    border: 2px double rgb(2, 82, 19);
+}
