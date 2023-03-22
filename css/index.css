@@ -1,12 +1,12 @@
 body{
-   background-image: url(https://fondosmil.com/fondo/31309.jpg);
-   margin-top: 60px;
+   background-image: url(../css/img/17860.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .h1{
-   font-family: 'Cinzel', sans-serif ;
-    text-align: left;
-    color: #ffffff;
+    font-family: 'Cinzel', sans-serif ;
+    color: rgb(255, 255, 255);
     font-size: 2em;
 }
 /* cinzel-700 - latin */
@@ -41,10 +41,10 @@ body{
         url('../fonts/cinzel-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
         url('../fonts/cinzel-v19-latin-700.svg#Cinzel') format('svg'); /* Legacy iOS */
   }
-  .menu{
+  h3{
    font-family: 'Cinzel', sans-serif ;
    text-align: left;
-   color: rgb(255, 255, 255);
+   color: rgb(255, 253, 253);
    font-size: 25px;
 }
 /* cinzel-700 - latin */
@@ -60,3 +60,18 @@ body{
         url('../fonts/cinzel-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
         url('../fonts/cinzel-v19-latin-700.svg#Cinzel') format('svg'); /* Legacy iOS */
   }
+  .btm{
+   background-color: rgb(155, 210, 247);
+   padding: 10px 25px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   color: black;
+   font-size: 12px;
+   margin: 4px 2px;
+   cursor: pointer;
+   
+}
+a:hover {
+   background-color: transparent;
+   border: 2px solid aquamarine;
+}

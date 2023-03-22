@@ -1,3 +1,6 @@
+body{
+    background-image: url(./img/20886.jpg);
+}
 .h1{
     text-align: center;
 }
@@ -33,4 +36,18 @@
 /*Border double*/
 .box-4{
     border: 2px double rgb(2, 82, 19);
+}
+.boton{
+
+    background-color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    position: relative;
+    bottom: -500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    margin: 4px 2px;
+    align-items: left;
+    cursor: pointer;
 }

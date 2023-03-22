@@ -29,3 +29,13 @@
          url('../fonts/bebas-neue-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/bebas-neue-v9-latin-regular.svg#BebasNeue') format('svg'); /* Legacy iOS */
   }
+  .btm{
+    background-color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
