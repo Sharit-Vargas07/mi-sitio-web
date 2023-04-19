@@ -1,5 +1,5 @@
 body{
-   background-image: url(../css/img/17860.jpg);
+   background-image: url(../img/17860.jpg);
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -73,5 +73,5 @@ body{
 }
 a:hover {
    background-color: transparent;
-   border: 2px solid aquamarine;
+   border: 2px solid transparent;
 }
