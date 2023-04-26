@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/formularios.css">
+</head>
+<body>
+    <div><a href="./index.html" class="style-1 box-1">Volver</a></div>
+
+    
+<div class="main-box">
+    <div class="content-box">
+        <div class="form-tittle">
+            <span>Avianca-Tiquetes</span>
+        </div>
+            <form>
+        <label>Ingrese el Número de Documento</label>
+        <input type="text">
+
+        <label >Ingrese el Número de Documento</label>
+        <select name="tipo documento">
+            <option value="cc">Cedula de Ciudadania</option>
+            <option value="ti">Tarjeta de Identidad</option>
+            <option value="ti">Registro Civil</option>
+            <option value="ti">Cedula Extranjera</option>
+        </select>
+        <label>Por favor, seleccione la clase</label>
+        <input type="radio" name="clase-vuelo">Primera Clase <br>
+        <input type="radio" name="clase-vuelo">Bussines class <br>
+        <input type="radio" name="clase-vuelo">Clase Turista <br>
+        <label>Por favor, Seleccione el día para visualizar el vuelo disponible</label>
+        <input type="checkbox" name="disponibilidad" value="2023-04-19">Miercoles 19 Abril, 2023 <br>
+        <input type="checkbox" name="disponibilidad" value="2023-04-20">Jueves 20 Abril, 2023 <br>
+        <input type="checkbox" name="disponibilidad" value="2023-04-21">Viernes 21 Abril, 2023 <br>
+        <input type="checkbox" name="disponibilidad" value="2023-04-22">Sabado 22 Abril, 2023 <br>
+
+        <input type="button" value="Enviar">
+      </form>
+    </div>
+</div>
+</body>
+</html>
