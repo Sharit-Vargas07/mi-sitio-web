@@ -82,7 +82,7 @@ a{
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    background-color: rgb(7, 53, 151);
+    background-color: rgb(255, 255, 255);
 }
    .style:hover{
     background-color: #f8fbff;
