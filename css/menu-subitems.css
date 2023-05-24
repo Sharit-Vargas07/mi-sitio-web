@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-nav{
+    text-align: right;
+    background-color: black;
+}
+.menu-style{
+    display: inline-block;
+    line-height: 50px;
+    padding: 0px  35px;
+    list-style: none;
+    color: aliceblue;
+}
+.menu-style:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
