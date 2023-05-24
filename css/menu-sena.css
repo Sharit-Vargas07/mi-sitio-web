@@ -14,7 +14,6 @@ body{
 
 }
 .menu1{
-    list-style: none;
     display: inline-block;
     border-right: 1px solid rgb(9, 94, 27) ;
     padding: 15px 15px;
