@@ -2,31 +2,37 @@
     margin: 0;
     padding: 0;
 }
+
 .main-nav {
  text-align: right;
  background-color: rgb(145, 185, 223);
- margin-bottom: 30em;
+ margin-bottom: 33em;
+ width: 100%;
+
+ 
 }
 .primero-style{
-line-height: 50px;
+   line-height: 50px;
    display: inline-block;
    padding: 0px 35px;
    list-style: none;
-   color: black;
+   color: rgb(255, 255, 255);
+
 }
 .primero-style:hover{
     background-color: rgb(26, 49, 165);
     cursor: pointer;
+    padding: 0px 35px;
 }
 .item-style-last{
-    margin-right: 10px;
-    padding: 0px 35px;
+    margin-right: 0px;
+    
 }
 .main-menu a {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     text-decoration: none;
-    color:black;
+    color:rgb(255, 255, 255);
     font-size: 1.5em;
 }
 .hamburguer-menu {
@@ -37,7 +43,7 @@ line-height: 50px;
 }
 img{
     justify-content: left;
-    padding: 9px;
+    padding: 0px;
     display: none;
     display: block;
 }
@@ -68,7 +74,7 @@ img{
     a{
         text-align: center;
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
         font-family: sans-serif;
     }
     a :hover{
@@ -77,7 +83,7 @@ img{
     }
     .hamburguer-menu {
         display: inline-block;
-        color: black;
+        color: rgb(255, 255, 255);
         font-size: 2.3em;
         margin-top: 10px;
         margin-left: 25px;
@@ -88,6 +94,13 @@ img{
     img{
         display: none;
     }
+}
+/*Botton*/
+.button-borders{
+    border: 2px;  
+    margin-right: 0; 
+     margin-left:10px; 
+     display:block; 
 }
 .primary-button {
     font-family: 'Ropa Sans', sans-serif;
@@ -108,6 +121,7 @@ img{
     transition-property: background-position, border, color;
     position: relative;
     z-index: 1;
+
    }
    
    .primary-button:hover {

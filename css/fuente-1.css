@@ -2,6 +2,13 @@
     margin: 0;
     border: 0;
 }
+body{
+    width: 100%;
+    height: 100vh;
+    background: -webkit-linear-gradient(red, black);
+    background-attachment: fixed;
+   
+}
 .main-box {
     width: 100%;
     height: 100vh;
@@ -39,6 +46,13 @@
     font-size: 10px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.button-borders{
+    border: 2px;  
+    margin-right: 0; 
+     margin-left:10px; 
+     display:block; 
 }
 
 .primary-button {

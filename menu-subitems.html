@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú-Subitems</title>
+    <link rel="stylesheet" href="./css/menu-subitems.css">
 </head>
 <body>
-    <nav class="main-nav">
-        <ul class="main-menu">
-          <li class="menu-style"><a href="#">Inicio</a></li>  
-          <li class="menu-style"><a href="#">Nuestra Empresa</a>  
-          <ul>
-            <li><a href="#">Huila</a></li>
-            <li><a href="#">Caqueta</a></li>
-            <li><a href="#">Cauca</a></li>
-            <li><a href="#">Nariño</a></li>
+    <nav>
+        <ul>
+            <li class="menu-style"><a href="#">INICIO</a></li>
+            <li><a href="#">NUESTRA EMPRESA</a>
+                <ul>
+                    <li><a href="#">Nariño</a></li>
+                    <li><a href="#">Caqueta</a></li>
+                    <li><a href="#">Cauca</a></li>
+                    <li><a href="#">Huila</a>
+                    <ul>
+                        <li><a href="#">Neiva</a></li>
+                        <li><a href="#">Pitalito</a></li>
+                        <li><a href="#">Garzon</a></li>
+                        <li><a href="#">La Plata</a></li>
+                    </ul>
+                    </li>
+            <li><a href="#">Tolima</a></li>
         </ul>
         </li>
-            <li class="menu-style"><a href="#">Productos</a></li>
-            <li class="menu-style"><a href="#">Contactenos</a></li>
-            <li class="menu-style"><a href="#">Galeria</a></li>
+        <li><a href="#">PRODUCTOS</a></li>
+        <li><a href="#">CONTACTENOS</a></li>
+        <li><a href="#">GALERÍA</a></li>
         </ul>
     </nav>
+</nav>
 
-    <script src="js/menu-subitems.js"></script>
+    <div class="button-borders">
+        <button class="primary-button"><a href="index.html">Volver</a></button>
+      </div>
 </body>
+
 </html>
