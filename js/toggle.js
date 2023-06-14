@@ -1,7 +1,7 @@
 let circuloBox = document.getElementById("circuloBox"); /* Circulo */
 let toggleBox = document.getElementById("toggleBox"); /* Rectangulo */
 /* Verificamos que la clase se encuentra en choice-box */
-circuloBox.addEventListener("click", function(){
+toggleBox.addEventListener("click", function(){
   if (circuloBox.classList.contains("circuloBox")) {
     circuloBox.classList.add("circulo-box-on")
     circuloBox.classList.remove("circuloBox")
