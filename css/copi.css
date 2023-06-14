@@ -1,60 +1,84 @@
-* {
-    margin: 0;
-    border: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+    font-family: 'Gill Sans', sans-serif;
 }
-nav {
-    background-color: rgb(48, 48, 48,.8);
-    font-size: 1.3rem;
-    width: 100%;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
-nav ul {
-    width: 100%;
-    text-align: left;
-    list-style: none;
-    position: absolute;
-    left: 0;
-    background-color: rgb(48, 48, 48,.8);
-}
-/* Primer nivel */
-.firs-item {
-    margin-left: 50px;
-}
-nav > ul > li {
-    display: inline-block;
-    width: 250px;
-    line-height: 70px;
-    text-align: center;
-}
-nav > ul > li:hover {
-    background-color: goldenrod;
-    cursor: pointer;
-}
-a {
-    text-decoration: none;
+.toggle-box { /* Rectangulo grande */
+    width: 250px; /* Alto del rectangulo */
+    height: 120px; /* Ancho del rectangulo */
+    /* background-color: rgb(52,198,17); */ /* Color del rectangulo */
+    border-radius: 55px; /* Bordes del rectangulo */
+    transition:  background-color 400ms; 
+} 
+.text-on-off { /* Letras ON y OFF */
+    font-size: 2em; /* Tamaño de la letra */
+    font-weight: 700; /* Grosor de la letra */
     color: white;
 }
-ul li {
-    position: relative;
+.choice-box { /* Circulo blanco */
+    position: relative;/* Permite que se cumplan left y top */
+    width: 110px; /* Alto del circulo */
+    height: 110px; /* Ancho del circulo */
+    left: 5px; /* Derecha del circulo */
+    top: -32px; /* Izquierda del circulo */
+    border-radius: 55px; /* Borde del circulo */
+    background-color: white; /* Color del circulo */
+    transition: all 400ms; /* Genera un movimiento */
 }
-/* segundo nivel */
-nav li li {
-    max-height: 0;
-    overflow: hidden;
+.text-off { /* Texto OFF */
+    position: relative; /* Permite que se cumplan las dos de abajo */
+    top: 39PX; /* Arriba */
+    left: -30px; /* Derecha */
 }
-nav li:hover > ul > li {
-    max-height: 500px;
-    overflow: visible;
-    text-align: center;
-    border-right: 1px solid rgba(245, 245, 245, .4);
-    border: 1px solid rgba(245, 245, 245, .4);
+.text-on { /* Texto ON */
+    position: relative; /* Permite que se cumplan las dos de abajo */
+    top: 39px; /* Arriba */
+    left: 150px; /* Derecha */
 }
-nav li > ul > li:hover {
-    background-color: goldenrod;
-    cursor: pointer;
+
+.toggle-box { /* Rectangulo */
+    cursor: pointer; /* Aparezca una manito en el rectangulo */
+    background-color: rgb(103,104,103); /* Color inicial del rectangulo */
 }
-/* Tercer nivel */
-nav ul ul ul {
-    left: 100%;
-    top: 0;
-} 
+
+
+.choice-box-on { /* JS para que se vaya a la derecha */
+    position: relative; /* Permite que se cumplan las cuatro de abajo */
+    width: 110px; /* Alto del circulo */
+    height: 110px; /* Ancho del circulo */
+    left: 135px; /* Derecha del circulo */
+    top: -32px; /* Izquierda del circulo */
+    border-radius: 55px; /* Borde del circulo */
+    transition: all 400ms; /* Genera un movimiento */
+}
+.choice-box-off { /* JS para que se vaya a la izquierda */
+    position: relative; /* Permite que se cumplan las cuatro de abajo */
+    width: 110px; /* Alto del circulo */
+    height: 110px; /* Ancho del circulo */
+    left: -135px; /* Derecha del circulo */
+    top: -32px; /* Izquierda del circulo */
+    border-radius: 55px; /* Borde del circulo */
+    /* background-color: rgb(106, 107, 106); */ /* Color del circulo */
+    transition: all 400ms; /* Genera un movimiento */
+}
+.toggle-box-on { /* JS para el cambio de color del rectangulo */
+    width: 250px; /* Alto del rectangulo */
+    height: 120px; /* Ancho del rectangulo */
+    border-radius: 55px; /* Bordes del rectangulo */
+    transition:  background-color 400ms; 
+    border-radius: 55px; /* Borde del circulo */
+    background-color: rgb(54, 204, 18); /* Color del circulo */  
+}
+.toggle-box-off { /* JS para el cambio de color del rectangulo */
+    width: 250px; /* Alto del rectangulo */
+    height: 120px; /* Ancho del rectangulo */
+    border-radius: 55px; /* Bordes del rectangulo */
+    transition:  background-color 400ms; 
+    border-radius: 55px; /* Borde del circulo */
+    background-color: rgb(106, 107, 106); /* Color del circulo */  
+}
+

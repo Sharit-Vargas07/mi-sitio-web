@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 197, 223);
+}
+
+.toggle-box {
+    margin-top: 5em;
+    margin-left: 50px;
+    width: 250px;
+    height: 120px;
+    border-radius: 60px;       
+    transition:  background-color 400ms;  
+    cursor: pointer;
+}
+.circulo-box {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff ;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: -27px;
+    transition: all 400ms;
+   
+}
+.toggle-box { /* Rectangulo */
+    cursor: pointer; /* Aparezca una manito en el rectangulo */
+    background-color: rgb(161, 161, 161); /* Color inicial del rectangulo */
+}
+.circulo-box-on{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 135px;
+    top: -27px;
+    border-radius: 50%;
+    transition: all 400ms;
+}
+.circulo-box-off{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 135px;
+    top: -27px;
+    border-radius: 50%;
+    transition: all 400ms;
+}
+
+.text-off {
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 40px;
+    left: 100px;
+}
+.text-on{
+    font-size: 2em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+.toggle-box-on { /* JS para el cambio de color del rectangulo */
+    width: 250px; /* Alto del rectangulo */
+    height: 120px; /* Ancho del rectangulo */
+    border-radius: 50%; /* Bordes del rectangulo */
+    transition:  background-color 400ms; 
+    border-radius: 60px; 
+    background-color: rgb(255, 0, 140); /* Color del circulo */  
+}
+
+
