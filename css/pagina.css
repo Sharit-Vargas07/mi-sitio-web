@@ -1,166 +1,247 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.logo{
-    border-radius: 10px;
-    grid-area: logo;
-
-   /*  width: 150px; */
-    height: 120px;
-}
-.listas{
-    text-decoration: none;
-    
-}
-.main-menu{
-    grid-area: main-menu;
-background-color: rgb(32, 32, 218);
-/* width: 400px; */
-height: 120px;
-border-radius: 15px;
-}
-
-header{
-    margin-top: 20px;
-    width: 100%;
-    height: 120px;
-    gap: 20px;
+  }
+  body{
     display: grid;
-    grid-template: "logo      main-menu  "/
-                  150px    minmax(150px, 1fr) ;
-} 
-.main-page{
+    width: 100%;
+    grid-template: "empty-let     main-page                empty-right" 100vh/
+                 minmax(50px,1fr)       minmax(900px,1200px)       minmax(50px,1fr)             ;
+  }
+  .main-page{
     grid-area: main-page;
-}
-body{
-  background-color: #f5f6f7;
-    width: 100%;
-    height: 100vh;;
+  }
+  header{
     display: grid;
-    grid-template: "empty-left           main-page                   empty-right"/
-              minmax(50px, 1fr  )      minmax(200px, 1500px)        minmax(50px, 1fr  )   ;
-              
-}
-.main-content{
-margin-bottom: 50px;
-
-gap: 20px;
-margin-top: 10px;
-display: grid;
-grid-template: "main-img       main-img      main-img " 
-               "article-1      article-2      article-3" 
-               "text-article-1 text-article-2   text-article-3"
-               "nuew-1          nuew-2             nuew-3"
-               "text-article-1-2 text-article-2-2 text-article-3-2" ;
-               
-            
-}
-.main-img{
-    
-grid-area: main-img;
-background-color:rgb(0, 2, 139);
-height: 600px;
-}
-.style-text{
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template:" logo    main-menu"80px/
+                    150px       minmax(700px,100%);
+  }
+  .logo{
+    border-radius: 15px;
+    grid-area: logo;
+    background-image: url("../img/Apple-logo.png");
+    width: 44%;
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-menu{
+    grid-area: main-menu ;
+    display: none;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .style-tex{
+    font-family: verdana,sans-serif;
+    font-size: 1.6em;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6em;
-    color: white;
-}
-/* articulos */
-.article{
- border-radius: 10px;
- height: 250px;
-grid-area: article-1;
-background-color:  rgba(31, 37, 65, 0.7);
-}
-.article-1{
- 
-    border-radius: 10px;
-    grid-area: article-1;
-    background-color:  rgba(31, 37, 65, 0.7);
-}
-.style-img{
-  display: flex;
-margin-top: 110px;
-   justify-content: center;
-    font-size: 1.6em;
-    color: white;
-}
-
-.article-2{  
-    border-radius: 10px;
-    grid-area: article-2;
-    background-color:  rgba(31, 37, 65, 0.7);
-    }
-.article-3{
-    border-radius: 10px;
-        grid-area: article-3;
-        background-color:  rgba(31, 37, 65, 0.7);
- }
- .text-article-1 {
-    margin-top: 10px;
-    grid-area: text-article-1 ;
- }
- .text-article-2{
-    margin-top: 10px;
-    grid-area: text-article-2;
- }
- .text-article-3 {
-    margin-top: 10px;
-    grid-area: text-article-3 ;
- }
-.nuew-1{
-    margin-top:10px;
-    grid-area: nuew-1 ;
- }
- 
-.nuew-2{
-    margin-top: 10px;
-    grid-area: nuew-2 ;
- }
-.nuew-3{
-    margin-top: 10px;
-    grid-area: nuew-3;
- }
- .text-article-1-2 {
-    margin-top: 10px;
-    grid-area: text-article-1-2 ;
- }
- .text-article-2-2 {
-    margin-top: 10px;
-    grid-area: text-article-2-2 ;
- }
- .text-article-3-2 {
-    margin-top: 10px;
-    grid-area: text-article-3-2 ;
- }
- .img-article{
-    width: 100%;
- }
- 
-@media only screen and (max-width: 600px){
-    .box{
-        display: grid;
-        grid-template-columns: auto;
-    }
- .main-content{
+  }
+  .main-content{
     display: grid;
-    grid-template:"main-img  " 
-                  "article-1 " 
-                  "text-article-1 "
-                  "article-2" 
-                  "text-article-2 "
-                  "article-3" 
-                  "text-article-3"
-                  "nuew-1 "
-                  "text-article-1-2 "
-                   "nuew-2"
-                   "text-article-2-2"
-                   "nuew-3"
-                  "text-article-3-2";
- }
- }
+    margin-top:15px ;
+    gap: 40px 70px ;
+    grid-template: "main-img  main-img  main-img" 600px
+                     "articulo-1   articulo-2    articulo-3 " 
+                     "articulo-4   articulo-5    articulo-6 "450px/
+                      1fr            1fr             1fr;
+  }
+  .main-img{
+    grid-area: main-img ;
+    background-image: url("../img/Mac.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .articulo-1{
+    grid-area: articulo-1;
+  }
+  .articulo-2{
+    grid-area: articulo-2;
+  }
+  .articulo-3{
+    grid-area: articulo-3;
+  }
+  .articulo-4{
+    grid-area: articulo-4;
+  }
+  .articulo-5{
+    grid-area: articulo-5;
+  }
+  .articulo-6{
+    grid-area: articulo-6;
+  }
+  .img-articullo{
+    height: 350px;
+    border-radius: 15px;
+  }
+  .style-tex-img{
+    text-align: center;
+    font-size: 1.2em;
+    color:  rgb(64,64,64.9);
+    font-family: verdana, sans-serif;
+    font-weight: 2em;
+    text-align: justify;
+  }
+  .img-1{
+    width: 100%;
+    background-image: url(../img/auriculares-apple-beats-mq562lla-studio3-inalambricos-negro-mate.jpg); /* este es sin aumentp vista pc */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-2{
+    background-image: url(../img/apple-iPad-mini-2-25352-g-alt.jpg); /* este es sin aumentp vista pc */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-3{
+    
+    width: 100%;
+    background-image: url(../img/img_2548.png); /* este es sin aumentp vista pc */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-4{
+    
+    width: 100%;
+    background-image: url(../img/andres.jpg); /* este es sin aumentp vista pc */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-5{
+    
+    width: 100%;
+    background-image: url(../img/pexels-stephan-seeber-1261728.jpg); /* este es sin aumentp vista pc */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img-6{
+    
+    width: 100%;
+    background-image: url(../img/pexels-photo-531321.jpeg); /* este es sin aumentp vista pc */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .main-menu {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .main-menu li {
+    font-size: 1.2em;
+    margin-right: 50px;
+  }
+  
+  .main-menu a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+    padding-left: 50px;
+  }
+  
+  .main-menu a:hover {
+    color: #666;
+  }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 452px) {
+    body {
+        grid-template:
+            "main-page"
+            auto
+            "main-page"
+            auto / 100%;
+    }
+  
+    .main-page {
+        margin: 20px;
+    }
+  
+    header {
+        grid-template: "logo    menu-toggle" 80px /
+            100px minmax(50px, 500px);
+        justify-content: center;
+    }
+  
+    .main-content {
+        grid-template:
+            "main-img"
+            300px
+            "articulo-1"
+            auto
+            "articulo-2"
+            auto
+            "articulo-3"
+            auto
+            "articulo-4"
+            auto
+            "articulo-5"
+            auto
+            "articulo-6"
+            auto / 100%;
+    }
+  
+    .img-articullo {
+        height: 200px;
+    }
+    .menu-toggle {
+        display: block;
+        background-color: #fff;
+    }
+  
+    .main-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0, 0.8);
+        position: absolute;
+        top: 160px;
+        left: 2px;
+        width: 50% 50%;
+    }
+  
+    .menu-active .main-menu ul {
+        display: flex;
+    }
+  
+    .main-menu li {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #fff;
+    }
+  }
+  
+  
