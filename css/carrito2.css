@@ -16,17 +16,17 @@ body{
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-top: 100px ;
+
 }
 .main-content {
-    width: 1000px;
+    width: 700px;
     border: 2px solid rgb(0, 26, 143);
     border-radius: 10px;
     margin: 10px 0 0 10px;
 }
 .box-subtotal {
-    padding: 20px 20px 10px 20px;
-    font-size: 1.5em;
+    padding: 20px 20px 12px 20px;
+    font-size: 1.7em;
 }
 
 #subtotal{
@@ -34,7 +34,7 @@ body{
     font-weight: 500;
 }
 .box-proceder-pago {
-    font-size: 1.4em;
+    font-size: 1.3em;
     display: flex;
     justify-content: center;
     align-items:center ;
@@ -45,15 +45,13 @@ body{
     margin: 20px;
 }
 #numeroProductos{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.1em;
 }
 .contenedor{
-    display: flex;
-    justify-content: left;
-    text-align: left;
     display: grid;
-    grid-template: "empty-left productos informacion empty-right"/
+    grid-template: "empty-left productos informacion empty-right"
+                    "empty-left box-buttons-cantidad    informacion  empty-right" /
                        20px       2fr        3fr       20px     ;
 }
 .productos{
@@ -64,7 +62,31 @@ body{
     margin-bottom: 10px;
     grid-area: productos;
 }
-
+.informacion{
+    grid-area: informacion;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+.little{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.autor, .precio, .material {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.signo-precio-unidad,.precio-unidad  {
+    font-size: 2.2em;
+    font-weight: 600;
+}
 .box-buttons-cantidad{
     font-size: 1.3em;
     display: flex;
@@ -92,19 +114,6 @@ body{
     color: white;
     border-radius:0 10px 10px 0;
 }
-span{
+.info-precio{
     font-weight: 700;
-    font-size: 30px;
-}
-.informacion{
-    grid-area: informacion;
-}
-.eliminar, .guardar{
-    width: 300px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    background-color: rgb(0, 26, 143);
-    color: white;
-    font-size: 20px;
 }
