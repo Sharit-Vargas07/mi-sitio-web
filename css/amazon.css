@@ -5,7 +5,7 @@
   font-family: 'Inter';
 
 }
-
+/* Fuente */
 /* inter-regular - latin */
 @font-face {
   font-display: swap;
@@ -16,7 +16,7 @@
   src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-
+/* Encabezado Menu amazon */
 header {
   background-color: rgb(0, 0, 0);
   width: 100%;
@@ -25,7 +25,7 @@ header {
   grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
     150px 180px 1fr 70px 160px 120px 140px;
 }
-
+/* Logo */
 .header-logo {
   grid-area: header-logo;
   display: flex;
@@ -40,7 +40,7 @@ header {
   color: white;
   padding-left: 15px;
 }
-
+/* Enviar a  */
 .header-enviar-a {
   grid-area: header-enviar-a;
   display: grid;
@@ -48,7 +48,7 @@ header {
     "box-icon-location box-texto-colombia" /
     20px 70px;
 }
-
+/* icono */
 .box-icon-location {
   height: 60px;
   grid-area: box-icon-location;
@@ -79,7 +79,7 @@ header {
   position: relative;
   bottom: 4px;
 }
-
+/* busqueda */
 .box-header-search-input {
   grid-area: box-header-search-input;
   display: flex;
@@ -94,7 +94,7 @@ header {
   grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
     70px 1fr 50px;
 }
-
+/* select todos */
 .box-filtro-todos {
   grid-area: box-filtro-todos;
   background-color: white;
@@ -146,7 +146,7 @@ option {
   padding-left: 10px;
   font-size: 1.1em;
 }
-
+/* lupa */
 .box-lupa {
   height: 40px;
   background-color: orange;
@@ -168,7 +168,7 @@ option {
 .header-flag-country {
   grid-area: header-flag-country;
 }
-
+/* borde naranaja hover(focus) */
 .header-search-input-focus {
   height: 46px;
   width: 100%;
@@ -193,7 +193,7 @@ option {
   margin-left: 65px;
   margin-top: 20px;
 }
-
+/* bandera y idioma */
 .idioma {
   color: white;
   font-weight: 600;
@@ -258,7 +258,7 @@ option {
   position: relative;
   margin-left: 40px;
 }
-
+/* carrito */
 .header-carrito {
   grid-area: header-carrito;
 }
@@ -329,66 +329,63 @@ li {
   justify-content: center;
   align-items: center;
   background-color: rgba(139, 137, 137, 0.689);
+  z-index: 10;
 }
 
-
+/* producto contenedor principal */
 
 .modal {
-  width: 90%;
-  height: 90%;
+  margin-top: 20px;
+  width: 95%;
+  height: 80%;
   z-index: 20;
   background-color: white;
   border-radius: 10px;
   position: relative;
   display: grid;
-  grid-template: "imgproduct          info" /
-    1fr 300px;
+  grid-template: "imagenes         info" /
+                    1fr             400px;
 }
-
+/* imagen */
 .imagenes {
   display: flex;
-}
-
-.imgproduct {
-  grid-area: imgproduct;
+  grid-area: imagenes;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: -70px;
-
+}
+.reloj{
+width: 37%;
+height: auto;
 }
 
-.reloj1 {
-  width: 70%;
-  height: auto;
-}
 
+
+/* informacion de la imagen */
 .info {
+  margin-top: 20px;
   grid-area: info;
   padding: 30px 60px 30px 30px;
   float: right;
-  margin-left: 20px;
-
+  margin-left: 9px;
+  border-radius: 10px;
 }
 
 .infoproducto {
   font-size: 1.2em;
   text-align: justify;
   line-height: 1em;
-  justify-content: center;
   display: flex;
-  align-items: center;
 }
 
 .txtcaracteristicas {
   color: gray;
   font-size: .5em;
   margin-top: 80px;
-  background-color: blue;
 }
-
+/* x */
 .clos {
   position: absolute;
   top: 5px;
@@ -399,4 +396,47 @@ li {
   border-radius: 5px;
   padding: 1px 4px 1px 4px;
   line-height: 0.8;
+}
+/* contenedores del resto de imagenes */
+.thumbails{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.thub{
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgb(116, 107, 107);
+}
+.figuras:hover{
+  border: 2px solid rgb(28, 28, 125);
+}
+.figuras{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  box-shadow: 1px 1px  rgb(185, 184, 184);
+  border: 2px solid #9c9c9c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figurauno{
+  border: 2px solid #ffa600;
+  box-shadow: 1px 1px  rgb(185, 184, 184);
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.imagenes{
+  width: 750px;
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.imagenes:hover{
+  opacity: 0;
 }
