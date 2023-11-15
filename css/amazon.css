@@ -577,3 +577,82 @@ height: auto;
   text-decoration: underline;
   font-size: 15px;
 }
+
+
+
+
+.box-header-search-input {
+  grid-area: box-header-search-input;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.header-search-input {
+  height: 40px;
+  width: 100%;
+  display: grid;
+  grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
+                  70px            1fr               50px;
+}
+.box-filtro-todos {
+  grid-area: box-filtro-todos;
+  background-color: rgb(230,230,230);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.filtro-todos {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.header-todos {
+  padding: 0 4px 0 15px;
+  font-size: .7em;
+}
+.icon-chevron {
+  font-size:.7em;
+}
+.box-buscar-amazon {
+  grid-area: box-buscar-amazon;
+  background-color: white;
+  width: 100%;
+}
+.input-busqueda {
+  border:none;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+.input-busqueda::placeholder {
+  font-size: .8em;
+  font-weight: 500;
+}
+.box-lupa {
+  height: 42px;
+  background-color: rgb(254,189,105);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lupa {
+  grid-area: lupa;
+}
+.icon-lupa {
+  font-size: 1.1em;
+}
+.header-flag-country {
+  grid-area: header-flag-country;
+}
+.header-identificate {
+  grid-area: header-identificate;
+}
+.header-devoluciones {
+  grid-area: header-devoluciones;
+}
+.header-carrito {
+  grid-area: header-carrito;
+}
+
