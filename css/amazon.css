@@ -417,8 +417,8 @@ height: auto;
   width: 60px;
   height: 60px;
   object-fit: contain;
-  box-shadow: 1px 1px  rgb(185, 184, 184);
-  border: 2px solid #9c9c9c;
+  border-radius: 14px;
+  border: 1px solid #9c9c9c;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -439,4 +439,131 @@ height: auto;
 }
 .imagenes:hover{
   opacity: 0;
+}
+
+/* Boton abrir */
+.box-modal{
+  display: none;
+}
+/* modal */
+.box-modal.visible{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(78, 75, 75, 0.623); */
+  z-index: 10;
+}
+/* Fondo */
+.fondo{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  display: grid;
+  grid-template: "imgfondo    infoproduc   imgprin" /
+                    100px      350px        550px;
+}
+/* Imagenes Pequeñas */
+.imgfondo{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding: 2px;
+}
+
+.imgpeque{
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.img{
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  object-fit: contain;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.img-2, .img-3, .img-4, .img-5, .img-6{
+  margin-top: 12px;
+}
+.img:hover{
+  border: 2px solid rgb(28, 28, 125);
+}
+/* Imagen Principal */
+.princi{
+  width: 200px;
+  height: 410px;
+  margin-top: 10px;
+  align-items: center;
+  margin-left: 68px;
+}
+.imgprin{
+  background-color: rgb(231, 231, 231);
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+/* Icono */
+.fa-arrow-up-from-bracket{
+  position: absolute;
+  margin-top: 10px;
+  left: 420px;
+  font-size: 1.4em;
+  background-color: white;
+  border-radius: 50px;
+  padding: 3px 5px 3px 5px;
+  line-height: 0.8;
+}
+/* Informacion del Producto */
+.infoproduc{
+  margin-left: 30px;
+  line-height: 30px;
+}
+.marca{
+  text-decoration: none;
+  color: #007185;
+  font-size: 15px;
+  display: block;
+}
+.marca:hover{
+  text-decoration: underline;
+  color: #C7511F;
+}
+.desc{
+  font-size: 25px;
+  color: #565959;
+}
+.califica{
+  display: block;
+  font-size: 14px;
+}
+.fa-star, .fa-star-half-stroke{
+  color: #ffa600;
+}
+.star-select{
+  border: none;
+  font-size: 4px;
+  font-weight: 0px;
+  color: #565959;
+}
+.valoracion, .preguntas{
+  text-decoration: none;
+  color: #007185;
+}
+.preguntas:hover{
+  text-decoration: underline;
+  color: #C7511F;
+}
+.valoracion:hover{
+  text-decoration: underline;
+  color: #C7511F;
 }

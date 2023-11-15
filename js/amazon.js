@@ -46,3 +46,19 @@ img6.addEventListener("click",() => {
 clos.addEventListener("click", function() {
     mainContent.style.display = "none";
 });
+
+
+let boxmodal = document.getElementById("box-modal");
+let modal = document.getElementById("modal");
+
+window.onload = () => {
+  boxmodal.classList.remove("visible")
+}
+
+
+btnclose.addEventListener("click", function() {
+  mainContent.style.display = "none";
+});
+function abrir(){
+  boxmodal.classList.add("visible")
+}
