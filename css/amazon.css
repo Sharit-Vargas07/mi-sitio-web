@@ -84,108 +84,77 @@ header {
   grid-area: box-header-search-input;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
 }
-
 .header-search-input {
   height: 40px;
   width: 100%;
   display: grid;
   grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
-    70px 1fr 50px;
+                  70px            1fr               50px;
 }
-/* select todos */
 .box-filtro-todos {
   grid-area: box-filtro-todos;
-  background-color: white;
+  background-color: rgb(230,230,230);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-
 .filtro-todos {
   display: flex;
   align-items: center;
   height: 40px;
 }
-
 .header-todos {
   padding: 0 4px 0 15px;
   font-size: .7em;
 }
-
-.select {
-  width: 60px;
-  border: none;
-  height: 40px;
-  border-radius: 8px 0px 0px 8px;
-  display: flex;
-  background-color: #c7c7c7;
-  color: #333;
-  cursor: pointer;
-}
-
-option {
-  background-color: white;
-}
-
 .icon-chevron {
-  font-size: .7em;
+  font-size:.7em;
 }
-
 .box-buscar-amazon {
   grid-area: box-buscar-amazon;
   background-color: white;
   width: 100%;
 }
-
 .input-busqueda {
-  border: none;
-  text-decoration: none;
+  border:none;
   height: 40px;
   width: 100%;
   padding-left: 10px;
   font-size: 1.1em;
 }
-/* lupa */
+.input-busqueda::placeholder {
+  font-size: .8em;
+  font-weight: 500;
+}
 .box-lupa {
-  height: 40px;
-  background-color: orange;
+  height: 42px;
+  background-color: rgb(254,189,105);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .lupa {
   grid-area: lupa;
 }
-
 .icon-lupa {
   font-size: 1.1em;
 }
-
 .header-flag-country {
   grid-area: header-flag-country;
 }
-/* borde naranaja hover(focus) */
-.header-search-input-focus {
-  height: 46px;
-  width: 100%;
-  display: grid;
-  grid-template: "box-filtro-todos box-buscar-amazon box-lupa" / 70px 1fr 50px;
-  border: 3px solid rgb(231, 153, 50);
-  border-radius: 12px;
+.header-identificate {
+  grid-area: header-identificate;
+}
+.header-devoluciones {
+  grid-area: header-devoluciones;
+}
+.header-carrito {
+  grid-area: header-carrito;
 }
 
-.header-search-input-no-focus {
-  height: 46px;
-  width: 100%;
-  display: grid;
-  grid-template: "box-filtro-todos box-buscar-amazon box-lupa" / 70px 1fr 50px;
-  border: 3px solid transparent;
-  border-radius: 12px;
-}
 
 .box-flag {
   display: flex;
@@ -283,6 +252,14 @@ option {
   position: relative;
   display: flex;
   margin-top: 15px;
+}
+.tod{
+  font-size: 12px;
+  color:rgb(53, 53, 53);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 
@@ -460,17 +437,17 @@ height: auto;
 }
 /* Fondo */
 .fondo{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
   margin-left: 20px;
   display: grid;
   grid-template: "imgfondo    infoproduc   imgprin" /
-                    100px      350px        550px;
+                    100px      350px        500px;
 }
 /* Imagenes Pequeñas */
 .imgfondo{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   padding: 2px;
 }
@@ -481,8 +458,8 @@ height: auto;
 }
 
 .img{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 14px;
   object-fit: contain;
   border: 1px solid #9c9c9c;
@@ -490,7 +467,7 @@ height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+
 }
 .img-2, .img-3, .img-4, .img-5, .img-6{
   margin-top: 12px;
@@ -508,7 +485,6 @@ height: auto;
   margin-left: 68px;
 }
 .imgprin{
-  background-color: rgb(231, 231, 231);
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -527,7 +503,6 @@ height: auto;
 /* Informacion del Producto */
 .infoproduc{
   margin-left: 30px;
-  line-height: 30px;
 }
 .marca{
   text-decoration: none;
@@ -540,7 +515,7 @@ height: auto;
   color: #C7511F;
 }
 .desc{
-  font-size: 25px;
+  font-size: 22px;
   color: #565959;
 }
 .califica{
@@ -556,103 +531,97 @@ height: auto;
   font-weight: 0px;
   color: #565959;
 }
-.valoracion, .preguntas{
+.valoracion{
   text-decoration: none;
-  color: #007185;
-}
-.preguntas:hover{
-  text-decoration: underline;
-  color: #C7511F;
+  color: #038298;
+  font-size: 13px;
 }
 .valoracion:hover{
   text-decoration: underline;
   color: #C7511F;
 }
+/* Volver a Resultados */
+.volver{
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 11px;
+  font-weight: 400;
+}
 .volv{
   color: #565959;
   text-decoration: none;
-  font-size: 15px;
 }
 .volv:hover{
   text-decoration: underline;
+}
+.fa-chevron-left{
+  font-size: 8px;
+  color: #565959;
+  font-weight: 400;
+}
+/* Precio */
+.dolar{
+  vertical-align: top;
   font-size: 15px;
 }
+.veinte{
+  font-size: 25px;
+  font-weight: 900;
+}
 
-
-
-
-.box-header-search-input {
-  grid-area: box-header-search-input;
-  display: flex;
-  justify-content: center;
-  align-items:center;
+hr{
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
-.header-search-input {
-  height: 40px;
-  width: 100%;
-  display: grid;
-  grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
-                  70px            1fr               50px;
+.deposito{
+  margin-top: 15px;
+  display: block;
+  font-size: 13px;
+  color: #565959;
 }
-.box-filtro-todos {
-  grid-area: box-filtro-todos;
-  background-color: rgb(230,230,230);
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+.deposit{
+  font-size: 16px;
+  font-weight: 700;
 }
-.filtro-todos {
-  display: flex;
-  align-items: center;
-  height: 40px;
+.fa-chevron-down{
+  color: #838787;
+  font-size: 8px;
 }
-.header-todos {
-  padding: 0 4px 0 15px;
-  font-size: .7em;
-}
-.icon-chevron {
-  font-size:.7em;
-}
-.box-buscar-amazon {
-  grid-area: box-buscar-amazon;
-  background-color: white;
-  width: 100%;
-}
-.input-busqueda {
-  border:none;
-  height: 40px;
-  width: 100%;
-  padding-left: 10px;
-  font-size: 1.1em;
-}
-.input-busqueda::placeholder {
-  font-size: .8em;
-  font-weight: 500;
-}
-.box-lupa {
-  height: 42px;
-  background-color: rgb(254,189,105);
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  display: flex;
+.img-referencia{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
+  margin-left: 370px;
 }
-.lupa {
-  grid-area: lupa;
+.color{
+  display: flex;
+  align-items: flex-start;
 }
-.icon-lupa {
-  font-size: 1.1em;
+.acercad{
+  font-size: 18px;
+  font-weight: 700;
 }
-.header-flag-country {
-  grid-area: header-flag-country;
+ul{
+  margin-top: 20px;
 }
-.header-identificate {
-  grid-area: header-identificate;
+li{
+  font-size: 12px;
 }
-.header-devoluciones {
-  grid-area: header-devoluciones;
+.info-licinco{
+  margin-bottom: 10px;
 }
-.header-carrito {
-  grid-area: header-carrito;
+.linea-hrtres{
+  margin-bottom: 0px;
 }
-
+.fa-angle-right{
+  color: #038298;
+  font-size: 9px;
+}
+.linea-hrcuatro{
+  margin-top: 20px;
+  width: 1330px;
+  margin-left: 20px;
+}

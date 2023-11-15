@@ -62,3 +62,5 @@ btnclose.addEventListener("click", function() {
 function abrir(){
   boxmodal.classList.add("visible")
 }
+
+   
