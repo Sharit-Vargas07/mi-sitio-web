@@ -496,7 +496,8 @@ height: auto;
   margin-top: 12px;
 }
 .img:hover{
-  border: 2px solid rgb(28, 28, 125);
+  border: 1px solid #0088a6;
+  box-shadow: 2px #0088a6;
 }
 /* Imagen Principal */
 .princi{
@@ -566,4 +567,12 @@ height: auto;
 .valoracion:hover{
   text-decoration: underline;
   color: #C7511F;
+}
+.volv{
+  color: #565959;
+  text-decoration: none;
+}
+.volv:hover{
+  text-decoration: underline;
+  font-size: 8px;
 }
