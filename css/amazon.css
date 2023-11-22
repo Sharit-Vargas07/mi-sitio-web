@@ -625,3 +625,9 @@ li{
   width: 1330px;
   margin-left: 20px;
 }
+.estrella{
+  color: rgb(255, 164, 28); 
+}
+.box-estrellas{
+  display: flex;
+}
