@@ -1,0 +1,735 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+  font-size: 16px;
+}
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+header {
+  background-color: black; 
+  width: 100%;
+  height: 60px;
+  display: grid;
+  grid-template: "header-logo header-enviar-a box-header-search-input header-flag-country header-identificate header-devoluciones header-carrito" 60px /
+                  150px       110px           1fr                     100px                160px               100px               140px;     
+}
+.header-logo {
+  grid-area: header-logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 70px;
+}
+.img-main-logo {
+  width: 90%;
+  color: white;
+  padding-left: 15px;
+}
+.header-enviar-a {
+  grid-area: header-enviar-a;
+  display: grid;
+  grid-template: "box-icon-location box-texto-enviar-a" 
+                 "box-icon-location box-texto-colombia" /
+                  20px          70px;  
+}
+.box-icon-location {
+  height: 60px;
+  grid-area: box-icon-location;
+  color: white;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+.icon-location {
+  font-size: .9em;
+}
+.box-texto-enviar-a {
+  grid-area: box-texto-enviar-a;
+  color: white;
+  position: relative;
+  top: 10px;
+  font-size: .7em;
+  font-weight: 300;
+}
+.box-texto-colombia {
+  grid-area: box-texto-colombia;
+  font-size: .9em;
+  font-weight: 500;
+  color: white;
+  position: relative;
+  bottom: 4px;
+}
+.box-header-search-input {
+  grid-area: box-header-search-input;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.header-search-input {
+  height: 40px;
+  width: 100%;
+  display: grid;
+  grid-template: "box-filtro-todos box-buscar-amazon box-lupa" /
+                  70px            1fr               50px;
+}
+.box-filtro-todos {
+  grid-area: box-filtro-todos;
+  background-color: rgb(230,230,230);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.filtro-todos {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.header-todos {
+  padding: 0 4px 0 15px;
+  font-size: .7em;
+}
+.icon-chevron {
+  font-size:.7em;
+}
+.box-buscar-amazon {
+  grid-area: box-buscar-amazon;
+  background-color: white;
+  width: 100%;
+}
+.input-busqueda {
+  border:none;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+.input-busqueda::placeholder {
+  font-size: .8em;
+  font-weight: 500;
+}
+.box-lupa {
+  height: 42px;
+  background-color: rgb(255,223,215);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lupa {
+  grid-area: lupa;
+}
+.icon-lupa {
+  font-size: 1.1em;
+}
+.header-flag-country {
+  grid-area: header-flag-country;
+}
+.header-identificate {
+  grid-area: header-identificate;
+}
+.header-devoluciones {
+  grid-area: header-devoluciones;
+}
+.header-carrito {
+  grid-area: header-carrito;
+}
+/*  */
+.header-search-input-focus {
+height: 46px;
+width: 100%;
+display: grid;
+grid-template: "box-filtro-todos box-buscar-amazon box-lupa" / 
+              70px             1fr                50px;
+border: 3px solid rgb(252, 104, 170);
+border-radius: 12px;
+}
+
+.header-search-input-no-focus {
+  height: 46px;
+  width: 100%;
+  display: grid;
+  grid-template: "box-filtro-todos box-buscar-amazon box-lupa" / 
+                  70px             1fr                50px;
+  border: 3px solid transparent;
+  border-radius: 12px;                 
+}
+/*  */
+.main-nav {
+  height: 40px;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  background-color: rgb(4, 6, 31);
+}
+.reloj{
+  width: 37%;
+  height: auto;
+  }
+.main-menu {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+.hori {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+}
+
+.hori:hover {
+  cursor: pointer;
+  color: rgb(158, 158, 158);
+  border: 1 solid white;
+}
+/*  */
+.header-flag-country {
+  grid-area: header-flag-country;
+}
+.header-identificate {
+  grid-area: header-identificate;
+}
+.header-devoluciones {
+  grid-area: header-devoluciones;
+}
+
+
+.box-flag {
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.flag-usa {
+  width: 30px;
+}
+.idioma {
+  color: white;
+  font-weight: 600;
+  font-size: .9em;
+  padding: 0 2px 0 3px;
+}
+.header-carrito {
+  color: white;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+.fa-solid.fa-chevron-down.fa-beat {
+  font-size: 10px;
+}
+.txt-hola-identificate, .txt-devoluciones  {
+  color: white;
+  font-size: .8em;
+  font-weight: 400;
+  position: relative;
+  top: 10px;
+}
+.txt-cuentas-listas, .txt-pedidos {
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  position: relative;
+  top: 10px;
+
+}
+.txt-Es {
+  color: white;
+  font-size: .8em;
+  padding: 5px;
+}
+.carrito {
+  font-size: 1.5em;
+  position: relative;
+  right: 5px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.main-content {
+  height: 100vh;
+  position: static; /* static */
+  z-index: 10;
+}
+.box-modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(0, 0, 0,.5);
+z-index: 20;
+}
+
+.modal {
+  margin-top: 20px;
+  width: 80%;
+  height: 80%;
+  z-index: 20;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  display: grid;
+  grid-template: "box-main-img-modal         info-modal" /
+                    400px             1fr;
+}
+/*  */
+
+/*  */
+.box-main-img-modal {
+  grid-area: box-main-img-modal;
+  width: 240px;
+  height: 100%;
+  margin-top: 5%;
+  margin-left: 50%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */ /*  */
+}   
+
+.img-box {
+  width: 37%;
+  height: auto;
+  /* transition: scale 400ms; */
+}
+.img-box:hover {
+  cursor: url(../img/busquedaLupa.png), auto;
+  /* scale: 110%; */
+}
+.main-img-modal {
+  width: 100%;
+  height: auto;
+}
+.img-mini{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px; */
+}
+
+.info-modal { /*  */
+  grid-area: info-modal;
+  padding: 30px 60px 0 30px; 
+  margin-top: 28px;  
+  margin-left: 200px;
+}
+.btn-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 1.3em;
+  border: 3px solid rgb(44,176,224,0.3);
+  border-radius: 6px;
+  padding: 0 3px;
+  cursor: pointer;
+}
+.box-video-imagenes {
+  grid-area: box-video-imagenes;
+  position: relative;
+  margin: 20px 0;
+}
+
+.box-video-imagenes::before {
+  content: "";
+  display: block;
+  border-top: 3px solid rgb(224, 222, 222);
+  width: 93%;
+  position: absolute;
+  top: 44px;
+  margin: 0 10px 0 20px;
+}
+
+
+
+.video-imagenes {
+  cursor: pointer;
+  
+}
+.option-videos {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+.option-imagenes {
+  position: absolute;
+  top: 10px;
+  left: 135px;
+  
+}
+.option-selected {
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(255, 143, 0);
+}
+
+/*  */
+
+
+.thumbails{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.thub{
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgb(116, 107, 107);
+}
+.figuras:hover{
+  border: 2px solid rgb(28, 28, 125);
+}
+.figuras{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.figurauno{
+  border: 2px solid #ffa600;
+  box-shadow: 1px 1px  rgb(185, 184, 184);
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+}
+.info-modal-box-img.quitar-estilo-modal {
+  display: block;
+}
+/*  */
+/*  */
+/*  */
+.main-barco {
+  width: 100%;
+  height: 100%;
+  z-index: 10; 
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  display: grid;
+  grid-template: "principal-container-img     principal-box-main-img-modal    principal-info-modal    principal-compra-modal"  /
+                  50px                        1fr                             500px                   300px;
+}
+.principal-container-img {
+  grid-area: principal-container-img;
+}
+.principal-box-main-img-modal {  /*  */ /*  */
+  grid-area: principal-box-main-img-modal;
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding-top: 50px;
+  overflow: hidden;
+  /* background-color: #C7511F; */
+  
+}
+.mouse-zoom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 21%;
+}
+.txt-mouse-zoom {
+  font-size: 25px;
+  font-weight: 500;
+}
+.img-box-principal {
+  width: 100%;
+  height: 100%;
+  /* transition: scale 400ms; */
+}
+.img-box-principal:hover {
+  cursor: url(../img/busquedaLupa.png), auto;
+  /* scale: 110%; */
+}
+
+.principal-info-modal {
+  grid-area: principal-info-modal;
+  padding: 30px 10px 30px 0;
+}
+.principal-compra-modal {
+  grid-area: principal-compra-modal;
+  margin: 30px 30px 30px 30px;
+  padding: 10px 20px 10px 20px;
+  border: solid 1px rgb(182, 182, 182);
+}
+/* principal-compra-modal */
+.compra-precio {
+  margin-bottom: 10px;
+}
+.txt-moneda-number {
+  font-size: 1.1em;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-start;
+}
+.txt-precio {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.txt-detalles, .principal-enviar-a {
+  color: rgb(81, 158, 206);
+}
+.principal-enviar-a {
+  font-size: 0.9em;
+}
+.principal-icon {
+  color: rgb(35, 33, 33);
+  font-weight: 100;
+}
+.txt-disponible {
+  color: rgb(52, 119, 35);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.envio-gratis {
+  font-weight: 700;
+  color: rgb(136, 136, 136);
+}
+.txt-entrega {
+  color: rgb(127, 127, 127);
+}
+.txt-entrega-negrita {
+  font-weight: 600;
+
+}
+.txt-entrega-verde {
+  color: green;    
+}
+.principal-cantidad {
+  margin-top: 15px;
+}
+.principal-select {
+  border-radius: 10px;
+  width: 100px;
+  padding: 5px;
+  background-color: rgb(189, 219, 238);
+  box-shadow: 2px 2px 10px 3px #75e4fc;
+}
+.principal-select:hover {
+  background-color: rgb(172, 179, 184);
+}
+/*  */
+.shop-compras {
+  grid-area: principal-info-modal;
+  font-size: 1.1em;
+}
+.comprar-ahora, .agregar-carrito  {
+  width: 200px;
+  height: 35px;
+  margin-top: 20px;
+  border-radius: 25px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agregar-carrito {
+  border: 1px solid rgb(255, 216, 20);
+  background-color: rgb(255, 215, 0);
+
+}
+.agregar-carrito:hover {
+  box-shadow: 10px 10px 60px rgb(255, 215, 0);
+}
+.comprar-ahora {
+
+  border: 1px solid rgb(250, 137, 0);
+  background-color: rgb(255, 140, 0);
+
+}
+.comprar-ahora:hover {
+  box-shadow: 10px 10px 60px rgb(255, 140, 0);
+}
+/*  */
+.principal-main-img-modal { /* tamaño de la imagen principal */
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Esto mantendrá la proporción de la imagen sin distorsionarla */
+}
+.principal-article {
+  flex-direction: row;
+  margin: 30px; 
+}
+.img-mini-p:hover {  /*  */
+  border: solid 2px #244096;
+  cursor: pointer; 
+  box-shadow: 10px 10px 60px rgb(76, 143, 165);   
+}
+.img-mini-p.box-img-barcos{
+  cursor: pointer;
+  border: 2px solid rgb(119, 71, 35);
+  /* border-radius: 15px; */
+}
+.img-mini-p {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  object-fit: contain;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10px; */
+}
+
+
+
+/* Informacion del Producto */
+.infoproduc{
+  margin-left: auto;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.marca{
+  text-decoration: none;
+  color: #007185;
+  font-size: 15px;
+  display: block;
+}
+.marca:hover{
+  text-decoration: underline;
+  color: #C7511F;
+}
+.desc{
+  font-size: 25px;
+  color: #565959;
+}
+.califica{
+  display: block;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.star-select{
+  border: none;
+  font-size: 4px;
+  font-weight: 0px;
+  color: #565959;
+}
+.valoracion, .preguntas{
+  text-decoration: none;
+  color: #007185;
+}
+.preguntas:hover{
+  text-decoration: underline;
+  color: #C7511F;
+}
+.sobre-este-articulo {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.txt-listas-modal {
+  line-height: 25px;
+  margin-top: 10px;
+}
+.txt-listas-modal li {
+  margin-bottom: 10px; /* Añade espacio entre los elementos de la lista */
+  list-style-type: disc; /* Agrega bolitas a los elementos de la lista */
+}
+.txt-principal-modal {
+  margin-top: 20px;
+}
+.txt-principal-modal ul {
+  list-style-type: disc; /* Agrega bolitas a los elementos de la lista */
+  margin-left: 20px; /* Añade un margen a la izquierda para dar espacio a las bolitas */
+}
+.fa-spinner {
+  margin-right: 10px;
+  font-weight: 800;
+}
+.fa-circle{
+  font-size: 6px;
+}
+.estrella{
+  color: rgb(255, 164, 28);
+  font-size: 0.9em;
+}
+.box-estrellas{
+  display: flex;
+  flex-direction: row;
+  /* background-color: #75e4fc; */
+}
+/*  */
+/*  */
+
+.content-img {
+  height: 92%;
+}
+.producto {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+.producto:hover::after {
+  content: 'Haz click para ampliar el contenedor madal';
+  background-color: #ffF;
+  z-index: 1000;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 99%;
+  display: flex;
+  justify-content: center;
+}
+.cordenadas {
+  width: 140px;
+  height: 130px;
+  border: 0.5px solid #333;
+  background-color: #fff9;
+  position: absolute;
+  display: none;
+}
+.magnifier {
+  width: 48%; /* Ancho de la lupa */
+  height: 82%; /* Altura de la lupa */
+  border: 2px solid var(--gris);
+  position: absolute;
+  cursor: crosshair;
+  display: none;
+  background-image: url('../img/auriculares1.jpg'); /* URL de tu imagen */
+  background-size: 1500px; /* Ancho del contenedor de la imagen */
+  top: 96px;
+  left: 31.9%;
+}
+
+
+
+
+
+
