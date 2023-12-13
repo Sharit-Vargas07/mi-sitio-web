@@ -1,0 +1,27 @@
+.estrella {
+  color: rgb(255,164,28);
+  font-size: 2em;
+}
+.box-estrellas {
+  display: flex;
+  flex-direction: row;
+}
+.barra {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 5px;
+  border: 2px solid rgb(140, 150, 158);
+  border-radius: 8px;
+  overflow:hidden;
+}
+.grafica-barras {
+  margin-top: 50px;
+}
+.barra-1-puntaje, .barra-2-puntaje, .barra-3-puntaje,
+.barra-4-puntaje, .barra-5-puntaje {
+  background-color: rgb(255,164,28);
+  width: 0px;
+  height: 30px;
+  overflow: hidden;
+  transition: width 1s;
+}
