@@ -49,10 +49,10 @@ img{
     transition: all ease .50;
 }
 .navbar a:hover{
-    color: #9a3990;
+    color: #dd3acd;
 }
 .navbar a.active{
-    color: #9a3990;
+    color: #dd3acd;
 }
 .menu-btn{
     background: linear-gradient(130.08deg, #383528 0%, #191919 100%);

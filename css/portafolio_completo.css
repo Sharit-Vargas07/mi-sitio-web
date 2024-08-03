@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    list-style: none;
+    text-decoration: none;
+}
+/* rubik-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/rubik-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+body{
+    background-color: #1A1A1A; 
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%;
+    background: transparent;
+    transition: all ease .45s;
+    background-color: #1A1A1A;
+}
+img{
+    width: 60px;
+    height:auto;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 0 25px;
+    transition: all ease .50;
+}
+.navbar a:hover{
+    color: #dd3acd;
+}
+.navbar a.active{
+    color: #dd3acd;
+}
+.menu-btn{
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#menu-icon{
+    font-size: 28px;
+    margin-left: 10px;
+    z-index: 6;
+}
+
+/* Menu Dos */
+.main-menu{
+    background-color: #1A1A1A;
+    margin-top: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15%;
+    transition: all ease .45s;
+}
+.contenedores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con el mismo ancho */
+    grid-gap: 10px; /* Espacio entre los elementos */
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.contenedor{
+    padding: 20px; /* Espacio interno para los elementos */
+    text-align: center; /* Alineación del texto al centro */
+}
+h3{
+    margin-bottom: 15px;
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+}
