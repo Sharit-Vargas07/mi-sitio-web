@@ -34,7 +34,7 @@ header{
     transition: all ease .45s;
     background-color: #1A1A1A;
 }
-img{
+.logo{
     width: 60px;
     height:auto;
 }
@@ -90,23 +90,24 @@ img{
 .contenedores{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con el mismo ancho */
-    grid-gap: 10px; /* Espacio entre los elementos */
+    grid-gap: 25px; /* Espacio entre los elementos */
     margin-top: 150px;
-    margin-left: 200px;
+    margin-left: 160px;
     margin-right: 200px;
 }
 .contenedor{
-    padding: 20px; /* Espacio interno para los elementos */
-    text-align: center; /* Alineación del texto al centro */
     border-radius: 15px;
 }
 h3{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    color: #191919;
+    margin-left: 15px;
 }
 .imagen{
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
+    width: 311px;
+    height: 150px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 
@@ -136,3 +137,34 @@ h3{
     box-shadow: 0 0 40px 15px #d636c6; /* Sombra difusa con efecto glow */
 }
 
+
+.content-table{
+    justify-content: center;
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+th, td {
+    border: 1px solid #7e0672;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    text-align: center;
+}
+th {
+    background-color: #d636c6;
+}
+caption{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+tfoot {
+    font-style: italic;
+}
